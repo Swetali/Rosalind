@@ -1,0 +1,15 @@
+#!usr/bin/python
+
+
+DNA = "ATCGCGATGCATGCATGCATGCATGCAGTCACTG"
+
+rev_comp = ""
+
+com_dict =  {'A':'T', 'T':'A', 'C':'G', 'G':'C'}
+
+for aa in reversed(DNA):
+	if aa in com_dict:
+		rev_comp += com_dict[aa]
+
+print DNA
+print rev_comp
